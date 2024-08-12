@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { Link } from "react-router-dom";
 
@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import logo from '../Assests/logo.png'
 
 const Navbar = () => {
+  const[menu,setMenu]= useState("home")
   return (
     <div className="navbar">
         <div className="nav-logo">
@@ -14,7 +15,7 @@ const Navbar = () => {
 
     </div>
     <ul className='nav-menu'>
-        <li>Home</li>
+    <li onClick={()=>{setMenu("home")}}><Link style={{textDecoration: 'none'}} to ='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
         <li>About</li>
         <li>Contact</li>
     </ul>
