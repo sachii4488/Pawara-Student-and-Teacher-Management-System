@@ -17,7 +17,7 @@
     display: grid;
 }
 .left h1{
-    margin-left: 200px;
+    margin-left: 130px;
     margin-top: 50px;
 }
 .login-fields{
@@ -65,15 +65,92 @@
 }
 .login-login{
     margin-left: 55px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a1019;
+    
+}
+.agree{
+    margin-top: -70px;
+    
+    display: inline;
+
+}
+.agree input{
     margin-top: -50px;
-    font-size: 18px;
+    margin-left: 50px;
+}
+.agree p{
+    margin-top: -25px;
+    margin-left: 70px;
+    font-size: 20px;
     font-weight: bold;
 }
-.login-agree{
-    margin-left: 55px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: -50px;
+@media(max-width: 1280px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
 
+    .left {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .left h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .login-fields input {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .left button {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .right img {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        padding: 10px;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .left h1 {
+        font-size: 24px;
+    }
+
+    .login-fields input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .left button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right img {
+        width: 100%;
+        margin: 0;
+    }
 }

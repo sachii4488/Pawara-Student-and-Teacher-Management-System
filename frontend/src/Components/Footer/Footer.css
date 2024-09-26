@@ -1,0 +1,50 @@
+.footer {
+    background: #640D14;
+    padding: 40px 180px;
+    text-align: center;
+    color: white;
+}
+.footer-content h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact-details p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.contact-details svg {
+    margin-right: 10px;
+}
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #8D493A;
+}
+
+/* Contact Button */
+.contact-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #640D14;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    background-color: #8D493A;
+}

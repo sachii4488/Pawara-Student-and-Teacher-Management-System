@@ -32,44 +32,71 @@
     list-style: none;
     gap: 50px;
     color: #626266;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 500;
 }
 .nav-menu li{
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     justify-content: center;
     gap: 3px;
     cursor: pointer;
 }
-.nav-menu hr{
-    border: 1px solid #FF4141;
-    width: 80%;
-    height: 3%;
-    border-radius: 10px;
-    background: #FF4141;
+.nav-menu a{
+    text-decoration: none;
+    color: #626266;
 }
+
 .nav-login-cart{
     display: flex;
     gap: 45px;
     align-items: center;
+    
 }
-.nav-login-cart button{
+.nav-login-cart button {
     width: 157px;
     height: 58px;
-    outline:none;
-    border: 1px solid #7a7a7a;
-    border-radius: 75px;
-    background: white;
-    color: #515151;
+    outline: none;
+    border: none; /* Remove the border */
+    border-radius: 30px; /* Make the corners more rounded */
+    background: linear-gradient(to bottom, #A9A9A9, ); /* Blue gradient background */
+    color: black; /* Text color */
     font-size: 20px;
-    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7); /* Subtle text shadow */
     cursor: pointer;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.3); /* Inner and outer shadow */
+    transition: transform 0.1s ease-in-out; /* Button click animation */
 }
-.nav-login-cart button:active{
-    background: #f3f3f3;
+.nav-login-cart button {
+    width: 250px;
+    height: 55px;
+    outline: none;
+    border: none; /* Remove the border */
+    border-radius: 30px; /* Make the corners more rounded */
+    background: linear-gradient(to bottom, #640D14, ); /* Blue gradient background */
+    color:white; /* Text color */
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7); /* Subtle text shadow */
+    cursor: pointer;
+    /*box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3), 0px 5px 15px rgba(0, 0, 0, 0.3); /* Inner and outer shadow */
+    transition: transform 0.1s ease-in-out; /* Button click animation */
+    background-color: #640D14;
+    
+    
 }
+
+.nav-login-cart button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    
+}
+
+.nav-login-cart button:active {
+    transform: scale(0.98); /* Slightly shrink button on click */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); /* Darker inner shadow on click */
+}
+
 .nav-cart-count{   
     width: 22px;
     height: 22px;
@@ -82,6 +109,7 @@
     font-size: 14px;
     background: red;
     color: white;
+   
 }
 .nav-dropdown{
     display: none;
