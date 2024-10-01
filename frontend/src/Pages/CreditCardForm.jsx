@@ -8,7 +8,8 @@ const CreditCardForm = () => {
         expirationMonth: '',
         expirationYear: '',
         securityCode: '',
-        paymentMethod: 'Visa' // Default to Visa or you can leave it empty
+        paymentMethod: 'Visa',
+        paymentAmount: ''  // Default to Visa or you can leave it empty
     });
 
     const handleChange = (e) => {
@@ -95,6 +96,14 @@ const CreditCardForm = () => {
                             <option value="02">02</option>
                             <option value="03">03</option>
                             <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>  
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
                         </select>
                     </label>
                     <label>
@@ -108,6 +117,11 @@ const CreditCardForm = () => {
                             <option value="2024">2024</option>
                             <option value="2025">2025</option>
                             <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            
                         </select>
                     </label>
                 </div>
@@ -121,6 +135,17 @@ const CreditCardForm = () => {
                         placeholder="Enter security code"
                     />
                 </label>
+                 {/* Payment Amount Field */}
+            <label className="payment-amount-label">
+                Payment Amount
+                <input
+                    type="number"
+                    name="paymentAmount"
+                    value={cardDetails.paymentAmount}
+                    onChange={handleChange}
+                    placeholder="Enter amount"
+                />
+            </label>
                 <button type="submit" className="continue-button">Continue</button>
             </form>
         </div>

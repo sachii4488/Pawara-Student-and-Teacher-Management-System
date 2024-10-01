@@ -25,8 +25,8 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
-      <div className="left">
+    <div className="login-container">
+      <div className="login-left">
         <h1>ADMIN LOGIN</h1>
         <form onSubmit={handleSubmit} className="login-fields">
           <input
@@ -49,12 +49,12 @@ const Login = () => {
         <p className="login-login">
           Don’t have an account? <span>Sign up here! </span>
         </p>
-        <div className="agree">
+        <div className="login-agree">
           <input type="checkbox" />
           <p>By continuing, I agree to the terms of use & privacy policy</p>
         </div>
       </div>
-      <div className="right">
+      <div className="login-right">
         <img src={logo} alt="Logo" />
       </div>
     </div>

@@ -1,0 +1,96 @@
+/* Container for the whole signup form and logo */
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: #fff;
+  }
+  
+  /* Form box styling */
+  .signup-form-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  /* Sign Up title */
+  .signup-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+  }
+  
+  /* Form fields */
+  .signup-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .signup-input-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .signup-input-field:focus {
+    border-color: #007bff;
+  }
+  
+  /* Remember me and forgot password */
+  .signup-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .signup-forgot-password {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  /* Sign in button */
+  .signup-btn-signin {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signup-btn-signin:hover {
+    background-color: #a20000;
+  }
+  
+  /* Login text at the bottom */
+  .signup-login-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .signup-login-link {
+    color: #ff4500;
+    text-decoration: none;
+  }
+  
+  /* Logo styling */
+  .signup-logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 300px;
+    height: auto;
+  }
+  
