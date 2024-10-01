@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../Components/Assests/logo2.png';
 import './CSS/Signup.css';
 
 const SignUpForm = () => {
@@ -29,7 +30,7 @@ const SignUpForm = () => {
         </p>
       </div>
       <div className="signup-logo-container">
-        <img src="path_to_logo_image" alt="Pawara Institute Logo" signup-className="logo" />
+      <img src={logo} alt="Logo" />
       </div>
     </div>
   );

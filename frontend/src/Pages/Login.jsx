@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../Components/Assests/logo2.png';
+import { Link } from 'react-router-dom';
+
 import './CSS/Login.css';
 
 const Login = () => {
@@ -47,8 +49,8 @@ const Login = () => {
           {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
         <p className="login-login">
-          Don’t have an account? <span>Sign up here! </span>
-        </p>
+  Don’t have an account? <Link to="/signup">Sign up here!</Link>
+</p>
         <div className="login-agree">
           <input type="checkbox" />
           <p>By continuing, I agree to the terms of use & privacy policy</p>

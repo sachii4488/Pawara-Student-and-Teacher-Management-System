@@ -1,96 +1,155 @@
-/* Container for the whole signup form and logo */
+/* Container for the entire signup page */
 .signup-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    width: 800px;
+    background-color: #f4f4f9; /* Soft off-white background */
     padding: 0 2rem;
-    background-color: #fff;
   }
   
-  /* Form box styling */
+  /* Form container styling */
   .signup-form-container {
-    background-color: #f8f9fa;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a clean, modern look */
+    width: 600px;
+    height: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 1000px;
   }
   
-  /* Sign Up title */
+  .signup-form-container:hover {
+    transform: translateY(-10px); /* Subtle hover effect for the form */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling for the signup form */
   .signup-title {
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #000;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #333;
   }
   
-  /* Form fields */
+  /* Styling for form groups (fields) */
   .signup-form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
-  .signup-input-field {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  /* Input fields */
+  .signup-login-fields input[type="name"],
+  .signup-login-fields input[type="email"],
+  .signup-login-fields input[type="password"]
+ {
+    width: 95px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     font-size: 1rem;
     outline: none;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
+  /* Input focus state */
   .signup-input-field:focus {
-    border-color: #007bff;
+    border-color: #ff6347; /* Accent color to match the theme */
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.4);
   }
   
-  /* Remember me and forgot password */
+  /* "Remember me" and "Forgot password" section */
   .signup-options {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    font-size: 0.9rem;
   }
   
+  /* Forgot password link styling */
   .signup-forgot-password {
     color: #007bff;
-    font-size: 0.9rem;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
-  /* Sign in button */
+  .signup-forgot-password:hover {
+    color: #0056b3;
+  }
+  
+  /* Signup button styling */
   .signup-btn-signin {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: #8b0000;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: -30px;
   }
   
   .signup-btn-signin:hover {
     background-color: #a20000;
   }
   
-  /* Login text at the bottom */
+  /* Text for login prompt at the bottom of the form */
   .signup-login-text {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.9rem;
   }
   
+  /* Link for login (redirecting from signup) */
   .signup-login-link {
     color: #ff4500;
+    font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
-  /* Logo styling */
-  .signup-logo-container {
-    text-align: center;
+  .signup-login-link:hover {
+    color: #ff6347;
   }
   
-  .logo {
-    max-width: 300px;
+/* Container for the logo */
+.signup-logo-container {
+    display: flex; /* Use flexbox to position the logo */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    width: 600px; /* Ensure it takes full width */
+    margin-top: -50px; /* Adjust top margin as needed */
+    margin-bottom: 20px;
+    margin-left:350px; /* Add some space below the logo */
+  }
+  
+  /* Logo image styling */
+  .signup-logo {
+    max-width: 100%;
+    width: 450px;
+     /* Adjust width as per the requirement */
     height: auto;
+    opacity: 0.9; /* Slightly transparent for a subtle touch */
+    transition: transform 0.3s ease;
+    margin-left:100px;
   }
+  .signup-logo img{
+    width: 650px;
+    margin-right: -400px;
+    margin-top: -250px;
+
+}
+  
+  .signup-logo:hover {
+    transform: scale(1.05);
+     /* Slight hover effect for logo */
+  }
+  
   
