@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer';
 import RegistrationForm from './Pages/RegistrationForm';
 import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
+import AdminDashboard from './Pages/AdminDashboard';
+import StudentDashboard from './Pages/StudentDashboard';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="/credit-card" element={<CreditCardForm />} />
       <Route path="/bank-transfer" element={<PaymentForm />} />
       <Route path='/signup' element={<Signup/>} />
+      <Route path='/admin' element={<AdminDashboard/>} />
+      <Route path='/student' element={<StudentDashboard/>} />
       </Routes>
       <Footer />
       </BrowserRouter>
