@@ -10,7 +10,8 @@ import RegistrationForm from './Pages/RegistrationForm';
 import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
 import AdminDashboard from './Pages/AdminDashboard';
-import StudentDashboard from './Pages/StudentDashboard';
+import StudentDashboard from './Pages/Studentdashboard';
+
 
 
 function App() {
