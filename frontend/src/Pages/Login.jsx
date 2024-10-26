@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import logo from '../Components/Assests/logo2.png';
+import React, { useState } from 'react'; // Import the useState hook
+import logo from '../Components/Assests/logo2.png';// Import the logo image
 import { Link } from 'react-router-dom';
 
 import './CSS/Login.css';
