@@ -1,0 +1,141 @@
+/* TeacherDashboard.css */
+
+.Teacher-dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.Teacher-sidebar {
+  width: 250px;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(180deg, #640D14,#e1ffea22 200%);background-color: #f6f6f6;
+}
+
+.Teacher-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Teacher-logo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.Teacher-logo h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  
+  
+  
+  
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 22px;
+  
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #1a73e8;
+  background-color: #e0e0e0;
+}
+
+
+.menu li:hover {
+  color: #1a73e8;
+}
+
+
+/* Main content */
+.Teacher-main-content {
+  flex: 1;
+  background-color: #ECF0F1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Teacher-welcome-message h1 {
+  font-size: 24px;
+  color: #34495E;
+  margin: 0;
+}
+
+.Teacher-welcome-message p {
+  color: #7F8C8D;
+}
+
+.Teacher-logout .btn-logout {
+  background-color: #E74C3C;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Teacher-logout .btn-logout:hover {
+  background-color: #C0392B;
+}
+
+/* Content section */
+.Teacher-content {
+  margin-top: 20px;
+}
+
+.Teacher-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Teacher-action-card {
+  background-color: #3498DB;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.Teacher-action-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.Teacher-action-card:hover {
+  transform: translateY(-5px);
+}
