@@ -1,4 +1,3 @@
-
 const express = require('express');
 const router = express.Router();
 const Admin = require('../models/Admin'); // Assuming you have an Admin model defined
@@ -7,11 +6,10 @@ const jwt = require('jsonwebtoken');
 const authMiddleware = require('../middleware/authMiddleware');
 const adminController = require('../controllers/adminController');
 
-
+// Admin CRUD routes with controller methods
 router.post('/admin', authMiddleware, adminController.createAdmin);
 router.get('/admins', authMiddleware, adminController.getAllAdmins);
 router.get('/admin/:id', authMiddleware, adminController.getAdminById);
-router.put('/admin/:id', authMiddleware, adminController.updateAdmin);
 router.delete('/admin/:id', authMiddleware, adminController.deleteAdmin);
 
 // @route   POST /admin/signup
@@ -69,7 +67,6 @@ router.post('/signup', async (req, res) => {
 // @access  Public
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
-
     try {
         // Check if admin exists
         let admin = await Admin.findOne({ email });
@@ -118,17 +115,44 @@ router.get('/me', authMiddleware, async (req, res) => {
         res.status(500).send('Server error');
     }
 });
-module.exports = router;
 
+// @route   PUT /admin/:id
+// @desc    Update admin profile
+// @access  Private
+router.put('/admin/:id', authMiddleware, async (req, res) => {
+    const { id } = req.params;
+    const { username, email, password } = req.body;
 
+    // Check if the logged-in admin ID matches the ID in the request params
+    if (req.admin.id !== id) {
+        return res.status(403).json({ errors: 'You are not authorized to update this profile' });
+    }
 
+    try {
+        // Find the admin by ID
+        let admin = await Admin.findById(id);
+        if (!admin) {
+            return res.status(404).json({ errors: 'Admin not found' });
+        }
 
+        // Update the fields if provided in the request
+        if (username) admin.username = username;
+        if (email) admin.email = email;
 
+        // If password is provided, hash it before updating
+        if (password) {
+            const salt = await bcrypt.genSalt(10);
+            admin.password = await bcrypt.hash(password, salt);
+        }
 
-/*router.get('/me', authMiddleware, async (req, res) => {
-    // Your code here to handle the route
-    res.json({ admin: req.admin });
+        // Save the updated admin profile
+        await admin.save();
+
+        res.json({ message: 'Profile updated successfully', admin });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server error');
+    }
 });
 
-// Other admin routes can go here*/
-
+module.exports = router;
