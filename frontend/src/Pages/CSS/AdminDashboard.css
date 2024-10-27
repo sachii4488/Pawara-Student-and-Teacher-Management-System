@@ -13,30 +13,42 @@
     max-width: 250px;
     height: 2150PX;
     background: white;
+    background: linear-gradient(180deg, #640D14,#e1ffea22 50%);background-color: #f6f6f6;
   }
   
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color:white;
     margin-bottom: 20px;
   }
   
   .menu {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 0;
+    
+    
+    
+    
   }
   
-  .menu li {
+  .menu-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 20px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    font-size: 22px;
+    
     border-radius: 6px;
-    background: #f6f6f6;
-    gap :20px;
     cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    color: #1a73e8;
+    background-color: #e0e0e0;
   }
   
   

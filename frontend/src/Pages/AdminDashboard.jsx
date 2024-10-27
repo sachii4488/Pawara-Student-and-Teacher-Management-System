@@ -1,25 +1,28 @@
 import React from 'react';
 import './CSS/AdminDashboard.css';
+
+import { Link } from 'react-router-dom'; 
 import profilepic from '../Components/Assests/AdminProfile.jpeg'; 
 
 
 const AdminDashboard = () => {
   return (
     <div className="dashboard-container">
-      <aside className="sidebar">
-        <div className="logo">SchoolHub</div>
-        <ul className="menu">
-          <li>Dashboard</li>
-          <li>Teachers</li>
-          <li>Students</li>
-          <li>Attendance</li>
-          <li>Finance</li>
-          <li>Notice</li>
-          <li>Calendar</li>
-          <li>Library</li>
-          <li>Messages</li>
-        </ul>
-      </aside>
+     <aside className="sidebar">
+  <div className="logo">PAWARA INSTITUTE</div>
+  <div className="menu">
+    <div className="menu-item">Dashboard</div>
+    <div className="menu-item">Teachers</div>
+    <div className="menu-item">Students</div>
+    <div className="menu-item">Attendance</div>
+    <div className="menu-item">Exams</div>
+    <Link to="/Announcement" className="menu-item">Announcement</Link>
+    <div className="menu-item">Time Table</div>
+    <div className="menu-item">Setting</div>
+    
+  </div>
+</aside>
+
       <main className="main-content">
         <header className="header">
           <div className="date">September 2030</div>

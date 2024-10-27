@@ -2,7 +2,7 @@ import React from 'react';
 import './CSS/StudentDashboard.css';
 import logo from '../Components/Assests/logo.png';
 
-const StudentDashboard = () => {
+const studentDashboard = () => {
   return (
     <div className="Student-dashboard">
       <aside className="Student-sidebar">
@@ -63,4 +63,4 @@ const StudentDashboard = () => {
 };
 
 
-export default StudentDashboard;
+export default studentDashboard;

@@ -11,6 +11,11 @@ import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
 import AdminDashboard from './Pages/AdminDashboard';
 import StudentDashboard from './Pages/Studentdashboard';
+import Teacherdashboard from './Pages/Teacherdashboard';
+
+
+
+
 
 
 
@@ -29,6 +34,10 @@ function App() {
       <Route path='/signup' element={<Signup/>} />
       <Route path='/admin' element={<AdminDashboard/>} />
       <Route path='/student' element={<StudentDashboard/>} />
+      <Route path='/teacher' element={<Teacherdashboard/>} />
+      
+    A
+
       </Routes>
       <Footer />
       </BrowserRouter>
