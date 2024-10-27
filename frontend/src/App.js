@@ -9,7 +9,7 @@ import Footer from './Components/Footer/Footer';
 import RegistrationForm from './Pages/RegistrationForm';
 import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
-import AdminDashboard from './Pages/AdminDashboard';
+import AdminDashboard from './Pages/AdminDashboard.jsx';
 import StudentDashboard from './Pages/Studentdashboard';
 
 
