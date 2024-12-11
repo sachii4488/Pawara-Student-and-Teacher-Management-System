@@ -20,6 +20,10 @@ const Login = () => {
     const studentEmail = 'def@gmail.com';
     const studentPassword = 'student';
 
+    //Hardcoded teacher credentials (for demonstration purposes)
+    const teacherEmail = 'ghi@gmail.com';
+    const teacherPassword = 'teacher';
+
     // Check for admin credentials
     if (email === adminEmail && password === adminPassword) {
       navigate('/admin'); // Redirect to admin dashboard
@@ -28,6 +32,10 @@ const Login = () => {
     else if (email === studentEmail && password === studentPassword) {
       navigate('/student'); // Redirect to student dashboard
     } 
+    // Check for teacher credentials
+    else if (email === teacherEmail && password === teacherPassword) {
+      navigate('/teacher'); // Redirect to teacher dashboard
+    }
     // Invalid credentials
     else {
       setError('Invalid email or password');

@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CSS/AdminDashboard.css';
 
+import { Link } from 'react-router-dom'; 
+import profilepic from '../Components/Assests/AdminProfile.jpeg'; 
+
 const AdminDashboard = ({ username = "User", profilePic = "defaultProfilePic.jpg" }) => {
   const navigate = useNavigate();
 
@@ -13,26 +16,47 @@ const AdminDashboard = ({ username = "User", profilePic = "defaultProfilePic.jpg
     navigate('/admin-announcement'); // Navigates to the AdminAnnouncement page
   };
 
+  const handleDashboardClick = () => {
+    navigate('/admin'); // Navigates to the AdminDashboard page
+  };
+
+  const handleTeachersClick = () => {
+    navigate('/teachers'); // Navigates to the Teachers page
+  };
+
+  const handleStudentsClick = () => {
+    navigate('/students'); // Navigates to the Students page
+  };
+
+  const handleAttendanceClick = () => {
+    navigate('/attendance'); // Navigates to the Attendance page
+  };
+
+  const handleExamsClick = () => {
+    navigate('/exams'); // Navigates to the Exams page
+  };
+
+  const handleTimeTableClick = () => {
+    navigate('/timetable'); // Navigates to the Time Table page
+  };
+
   return (
     <div className="dashboard-container">
-      {/* Sidebar */}
       <aside className="sidebar">
-        <div className="logo">SchoolHub</div>
-        <ul className="menu">
-          <li>Dashboard</li>
-          <li>Teachers</li>
-          <li>Students</li>
-          <li>Attendance</li>
-          <li>Finance</li>
-          <li onClick={handleAnnouncementsClick} style={{ cursor: 'pointer' }}>Announcements</li>
-          <li>Calendar</li>
-          <li onClick={handleProfileClick} style={{ cursor: 'pointer' }}>Profile</li>
-        </ul>
+        <div className="logo">PAWARA INSTITUTE</div>
+        <div className="menu">
+          <div className="menu-item" onClick={handleDashboardClick} style={{ cursor: 'pointer' }}>Dashboard</div>
+          <div className="menu-item" onClick={handleTeachersClick} style={{ cursor: 'pointer' }}>Teachers</div>
+          <div className="menu-item" onClick={handleStudentsClick} style={{ cursor: 'pointer' }}>Students</div>
+          <div className="menu-item" onClick={handleAttendanceClick} style={{ cursor: 'pointer' }}>Attendance</div>
+          <div className="menu-item" onClick={handleExamsClick} style={{ cursor: 'pointer' }}>Exams</div>
+          <div className="menu-item" onClick={handleAnnouncementsClick} style={{ cursor: 'pointer' }}>Announcements</div>
+          <div className="menu-item" onClick={handleProfileClick} style={{ cursor: 'pointer' }}>Profile</div>
+          <div className="menu-item" onClick={handleTimeTableClick} style={{ cursor: 'pointer' }}>Time Table</div>
+        </div>
       </aside>
 
-      {/* Main Content */}
       <main className="main-content">
-        {/* Header */}
         <header className="header">
           <div className="date">September 2030</div>
           <div className="profile" onClick={handleProfileClick} style={{ cursor: 'pointer' }}>
@@ -41,7 +65,6 @@ const AdminDashboard = ({ username = "User", profilePic = "defaultProfilePic.jpg
           </div>
         </header>
 
-        {/* Dashboard Section */}
         <section className="dashboard">
           <div className="cards">
             <div className="card">Students: 124,684</div>

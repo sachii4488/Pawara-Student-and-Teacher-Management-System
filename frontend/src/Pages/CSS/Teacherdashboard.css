@@ -1,70 +1,71 @@
-.student-dashboard {
+.teacher-dashboard {
   display: flex;
 }
 
-.student-sidebar {
+.teacher-sidebar {
   width: 250px;
-  background-color: #640915;
+  background-color: #801220;
   color: white;
   padding: 20px;
 }
 
-.student-logo {
+.teacher-logo {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.student-logo img {
+.teacher-logo img {
   width: 100px;
   height: auto;
+  border-radius: 50%;
 }
 
-.student-logo h2 {
+.teacher-logo h2 {
   font-size: 1.5em;
   margin: 10px 0;
 }
 
-.student-sidebar nav ul {
+.teacher-sidebar nav .menu {
   list-style: none;
   padding: 0;
 }
 
-.student-sidebar nav ul li {
+.teacher-sidebar nav .menu .menu-item {
   padding: 10px;
   cursor: pointer;
 }
 
-.student-sidebar nav ul li:hover {
-  background-color: #630b0b;
+.teacher-sidebar nav .menu .menu-item:hover {
+  background-color: #722428;
 }
 
-.student-main-content {
+.teacher-main-content {
   flex-grow: 1;
   padding: 20px;
 }
 
-.student-welcome-message {
+.teacher-welcome-message {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.student-welcome-message h1 {
+.teacher-welcome-message h1 {
   font-size: 2em;
   margin: 0;
 }
 
-.student-welcome-message p {
+.teacher-welcome-message p {
   color: #666;
 }
 
-.student-logout {
+.teacher-logout {
   text-align: right;
 }
 
 .btn-logout {
-  background-color: #b62313;
+  background-color: #e74c3c;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -73,19 +74,19 @@
 }
 
 .btn-logout:hover {
-  background-color: #9e2012;
+  background-color: #c0392b;
 }
 
-.student-content {
+.teacher-content {
   margin-top: 20px;
 }
 
-.student-actions {
+.teacher-actions {
   display: flex;
   justify-content: space-around;
 }
 
-.student-action-card {
+.teacher-action-card {
   background-color: #ecf0f1;
   padding: 20px;
   border-radius: 8px;
@@ -93,7 +94,7 @@
   text-align: center;
 }
 
-.student-action-card h3 {
+.teacher-action-card h3 {
   margin: 0;
   font-size: 1.5em;
 }

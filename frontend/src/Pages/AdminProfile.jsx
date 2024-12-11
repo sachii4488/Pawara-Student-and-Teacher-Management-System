@@ -80,7 +80,7 @@ const UserProfile = ({ profileName, profileEmail }) => {
 
         <div className="form-group">
           <label className="form-label">Upload Photo</label>
-          <input type="file" onChange={handleImageChange} className="form-input" style={{ width: '50%' }} />
+          <input type="file" onChange={handleImageChange} className="form-input" />
         </div>
       </div>
 

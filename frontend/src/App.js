@@ -1,17 +1,18 @@
-import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
-import Footer from './Components/Footer/Footer';
 import RegistrationForm from './Pages/RegistrationForm';
 import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
 import AdminDashboard from './Pages/AdminDashboard';
 import StudentDashboard from './Pages/Studentdashboard';
-import AdminProfile from './Pages/AdminProfile'; // Import ProfilePage
+import AdminProfile from './Pages/AdminProfile';
 import AdminAnnouncement from './Pages/AdminAnnouncement';
+import Teacherdashboard from './Pages/Teacherdashboard';
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/student" element={<StudentDashboard />} />
-          <Route path="/profile" element={<AdminProfile/>} /> 
-          <Route path='/Announcement' element={<AdminAnnouncement/>} />
+          <Route path="/profile" element={<AdminProfile />} />
+          <Route path="/announcement" element={<AdminAnnouncement />} />
+          <Route path="/teacher" element={<Teacherdashboard />} />
         </Routes>
         <Footer />
       </BrowserRouter>

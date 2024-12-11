@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CSS/AdminAnnouncement.css';
 
-const Announcement = () => {
+const AdminAnnouncement = () => {
   const [announcements, setAnnouncements] = useState([]);
   const [newAnnouncement, setNewAnnouncement] = useState('');
 
@@ -66,4 +66,4 @@ const Announcement = () => {
   );
 };
 
-export default Announcement;
+export default AdminAnnouncement;
