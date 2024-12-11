@@ -1,49 +1,41 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
-//import LoginSignup from './Pages/Signup';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
-import Footer from './Components/Footer/Footer';
 import RegistrationForm from './Pages/RegistrationForm';
 import CreditCardForm from './Pages/CreditCardForm';
 import PaymentForm from './Pages/PaymentForm';
-import AdminDashboard from './Pages/AdminDashboard';
+import AdminDashboard from './Pages/AdminDashboard.jsx';
 import StudentDashboard from './Pages/Studentdashboard';
+import AdminProfile from './Pages/AdminProfile';
+import AdminAnnouncement from './Pages/AdminAnnouncement';
 import Teacherdashboard from './Pages/Teacherdashboard';
-
-
-
-
-
-
 
 function App() {
   return (
     <div>
-      <BrowserRouter> 
-      <Navbar/>
-      <Routes>
-      <Route path='/' element={<Home/>}/>
-    
-      <Route path='/login' element={<Login/>} />
-      <Route path='/register' element={<RegistrationForm/>} />
-      <Route path="/credit-card" element={<CreditCardForm />} />
-      <Route path="/bank-transfer" element={<PaymentForm />} />
-      <Route path='/signup' element={<Signup/>} />
-      <Route path='/admin' element={<AdminDashboard/>} />
-      <Route path='/student' element={<StudentDashboard/>} />
-      <Route path='/teacher' element={<Teacherdashboard/>} />
-      
-    A
-
-      </Routes>
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<RegistrationForm />} />
+          <Route path="/credit-card" element={<CreditCardForm />} />
+          <Route path="/bank-transfer" element={<PaymentForm />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/student" element={<StudentDashboard />} />
+          <Route path="/profile" element={<AdminProfile />} />
+          <Route path="/announcement" element={<AdminAnnouncement />} />
+          <Route path="/teacher" element={<Teacherdashboard />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      </div>
+    </div>
   );
 }
 
 export default App;
-/*comment*/

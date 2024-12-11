@@ -1,12 +1,13 @@
 import React from "react";
 import './Hero.css';
 import hero_image from "../Assests/Home.jpeg"; // Ensure this path is correct
+import { FaUserPlus, FaCertificate, FaSchool, FaChalkboardTeacher, FaProjectDiagram, FaLaptop } from 'react-icons/fa';
 
 const Hero = () => {
     return (
         <div className="home">
             {/* Hero Section */}
-            <section className="hero-section" style={{ backgroundImage: `url(${hero_image})` }}>
+            <section className="hero-section">
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1>Welcome to Pawara Institute</h1>
@@ -20,6 +21,42 @@ const Hero = () => {
                 " Our mission at Pawara Institute is to empower students with the knowledge, skills, and values to excel in a changing world. We are dedicated to providing a transformative education that fosters critical thinking, curiosity, and a commitment to lifelong learning "
                 </p>
             </div>
+            <div className="features-section">
+            <h2 className="features-title">Advantages of the School</h2>
+            <p className="features-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+            <div className="features-grid">
+                <div className="feature-card">
+                    <FaUserPlus className="feature-icon" />
+                    <h3 className="feature-title">MAXIMUM STUDENTS GET A+ EVERY YEAR</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div className="feature-card">
+                    <FaCertificate className="feature-icon" />
+                    <h3 className="feature-title">WE GIVE INTERNATIONAL CERTIFICATES</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div className="feature-card">
+                    <FaSchool className="feature-icon" />
+                    <h3 className="feature-title">HEALTHFUL SCHOOL ENVIRONMENT</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div className="feature-card">
+                    <FaChalkboardTeacher className="feature-icon" />
+                    <h3 className="feature-title">WE TEACH USING PROJECTORS</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div className="feature-card">
+                    <FaLaptop className="feature-icon" />
+                    <h3 className="feature-title">WE HAVE NEW TECHNOLOGIES</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+                <div className="feature-card">
+                    <FaProjectDiagram className="feature-icon" />
+                    <h3 className="feature-title">QUALIFIED TEACHERS</h3>
+                    <p className="feature-description">Lorem ipsum dolor sit amet, ed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            </div>
+        </div>
             <div className='about'>
                 <div className='about-content' id="about">
                     <h3>About Us</h3>
@@ -27,10 +64,8 @@ const Hero = () => {
                     <p>Our faculty members are more than just instructors—they are mentors and leaders who inspire students to excel academically and personally. They stay at the forefront of educational advancements, continuously updating their skills to provide cutting-edge instruction. At Pawara Institute, we believe that great teachers are the cornerstone of a great education, and we are proud to offer our students access to the very best educators in the country.</p>
                 </div>
             </div>
-            </div>
-
-            
+        </div>
     )
 }
 
-export default Hero
+export default Hero;

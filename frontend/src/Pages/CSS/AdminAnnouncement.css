@@ -1,0 +1,55 @@
+.announcement-container {
+  padding: 20px;
+}
+
+.announcement-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.announcement-title, .announcements-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.announcement-form {
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.announcement-list {
+  margin-top: 20px;
+}
+
+.announcement-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.announcement-content {
+  margin: 0;
+}

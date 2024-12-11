@@ -1,141 +1,100 @@
-/* TeacherDashboard.css */
-
-.Teacher-dashboard {
+.teacher-dashboard {
   display: flex;
-  height: 100vh;
-  font-family: Arial, sans-serif;
 }
 
-/* Sidebar */
-.Teacher-sidebar {
+.teacher-sidebar {
   width: 250px;
-
+  background-color: #801220;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
-  background: linear-gradient(180deg, #640D14,#e1ffea22 200%);background-color: #f6f6f6;
 }
 
-.Teacher-logo {
+.teacher-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.teacher-logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.teacher-logo h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.teacher-sidebar nav .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-sidebar nav .menu .menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.teacher-sidebar nav .menu .menu-item:hover {
+  background-color: #722428;
+}
+
+.teacher-main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.teacher-welcome-message {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.Teacher-logo img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-.Teacher-logo h2 {
-  font-size: 18px;
-  text-align: center;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0;
-  
-  
-  
-  
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  font-size: 22px;
-  
-  border-radius: 6px;
-  cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.menu-item:hover {
-  color: #1a73e8;
-  background-color: #e0e0e0;
-}
-
-
-.menu li:hover {
-  color: #1a73e8;
-}
-
-
-/* Main content */
-.Teacher-main-content {
-  flex: 1;
-  background-color: #ECF0F1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.Teacher-welcome-message h1 {
-  font-size: 24px;
-  color: #34495E;
+.teacher-welcome-message h1 {
+  font-size: 2em;
   margin: 0;
 }
 
-.Teacher-welcome-message p {
-  color: #7F8C8D;
+.teacher-welcome-message p {
+  color: #666;
 }
 
-.Teacher-logout .btn-logout {
-  background-color: #E74C3C;
+.teacher-logout {
+  text-align: right;
+}
+
+.btn-logout {
+  background-color: #e74c3c;
   color: white;
-  padding: 8px 16px;
   border: none;
+  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.Teacher-logout .btn-logout:hover {
-  background-color: #C0392B;
+.btn-logout:hover {
+  background-color: #c0392b;
 }
 
-/* Content section */
-.Teacher-content {
+.teacher-content {
   margin-top: 20px;
 }
 
-.Teacher-actions {
+.teacher-actions {
   display: flex;
   justify-content: space-around;
 }
 
-.Teacher-action-card {
-  background-color: #3498DB;
-  color: white;
+.teacher-action-card {
+  background-color: #ecf0f1;
   padding: 20px;
-  width: 200px;
-  text-align: center;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  width: 30%;
+  text-align: center;
 }
 
-.Teacher-action-card h3 {
+.teacher-action-card h3 {
   margin: 0;
-  font-size: 18px;
-}
-
-.Teacher-action-card:hover {
-  transform: translateY(-5px);
+  font-size: 1.5em;
 }
